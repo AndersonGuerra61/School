@@ -87,12 +87,16 @@
     <Compile Include="BusinessLogic\Helpers\ViewModelBase.vb" />
     <Compile Include="BusinessLogic\Services\Implementations\CourseService.vb" />
     <Compile Include="BusinessLogic\Services\Implementations\DepartmentService.vb" />
+    <Compile Include="BusinessLogic\Services\Implementations\OfficeAssignmentService.vb" />
     <Compile Include="BusinessLogic\Services\Implementations\OnlineCourseService.vb" />
     <Compile Include="BusinessLogic\Services\Implementations\OnsiteCourseService.vb" />
+    <Compile Include="BusinessLogic\Services\Implementations\StudentGradeService.vb" />
     <Compile Include="BusinessLogic\Services\Interfaces\ICourseService.vb" />
     <Compile Include="BusinessLogic\Services\Interfaces\IDepartmentService.vb" />
+    <Compile Include="BusinessLogic\Services\Interfaces\IOfficeAssignmentService.vb" />
     <Compile Include="BusinessLogic\Services\Interfaces\IOnlineCourseService.vb" />
     <Compile Include="BusinessLogic\Services\Interfaces\IOnsiteCourseService.vb" />
+    <Compile Include="BusinessLogic\Services\Interfaces\IStudentGradeService.vb" />
     <Compile Include="BusinessLogic\Services\ServiceLocator.vb" />
     <Compile Include="BusinessObjects\Helpers\DataContext.vb" />
     <Compile Include="BusinessObjects\Models\Course.vb">
@@ -143,11 +147,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Modules\OfficeAssignments\Views\OfficeAsignmentsList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Modules\OnlineCourses\Views\OnlineCoursesList.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Modules\OnsiteCourses\Views\OnsiteCoursesList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Modules\StudentGrades\Views\StudentGradesList.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -180,6 +192,10 @@
     <Compile Include="Modules\Departments\Views\DepartmentsList.xaml.vb">
       <DependentUpon>DepartmentsList.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Modules\OfficeAssignments\ViewModel\OfficeAssignmentsViewModel.vb" />
+    <Compile Include="Modules\OfficeAssignments\Views\OfficeAsignmentsList.xaml.vb">
+      <DependentUpon>OfficeAsignmentsList.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Modules\OnlineCourses\ViewModels\OnlineCoursesViewModel.vb" />
     <Compile Include="Modules\OnlineCourses\Views\OnlineCoursesList.xaml.vb">
       <DependentUpon>OnlineCoursesList.xaml</DependentUpon>
@@ -187,6 +203,10 @@
     <Compile Include="Modules\OnsiteCourses\ViewModels\OnsiteCoursesViewModel.vb" />
     <Compile Include="Modules\OnsiteCourses\Views\OnsiteCoursesList.xaml.vb">
       <DependentUpon>OnsiteCoursesList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\StudentGrades\ViewModels\StudentGradesViewModel.vb" />
+    <Compile Include="Modules\StudentGrades\Views\StudentGradesList.xaml.vb">
+      <DependentUpon>StudentGradesList.xaml</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb">
       <SubType>Code</SubType>

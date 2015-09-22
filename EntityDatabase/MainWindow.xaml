@@ -5,8 +5,10 @@
     xmlns:courses="clr-namespace:Modules.Courses.Views"
     xmlns:onlinecourses="clr-namespace:Modules.OnlineCourses.Views"
     xmlns:onsitecourses="clr-namespace:Modules.OnsiteCourses.Views"
+    xmlns:officeassignments="clr-namespace:Modules.OfficeAssignments.Views"
+    xmlns:studentgrades="clr-namespace:Modules.StudentGrades.Views"
     Title="MainWindow" Height="377" Width="568">
     <Grid>
-        <onsitecourses:OnsiteCoursesList x:Name="OnsiteCoursesUserControl"/>
+        <studentgrades:StudentGradesList x:Name="StudentGradesUserControl"/>
     </Grid>
 </Window>

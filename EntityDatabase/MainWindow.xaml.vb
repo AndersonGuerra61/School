@@ -2,6 +2,8 @@
 Imports Modules.Departments.ViewModels
 Imports Modules.OnlineCourses.ViewModels
 Imports Modules.OnsiteCourses.ViewModels
+Imports Modules.OfficeAssignments.ViewModels
+Imports Modules.StudentGrades.ViewModels
 Class MainWindow
     Sub New()
 
@@ -16,11 +18,17 @@ Class MainWindow
         'Courses
         'Me.CoursesUserControl.MainGrid.DataContext = New CoursesViewModel
 
+        'OfficeAssignments
+        'Me.OfficeAssignmentsUserControl.MainGrid.DataContext = New OfficeAssignmentsViewModel
+
         'OnlineCourses
         'Me.OnlineCoursesUserControl.MainGrid.DataContext = New OnlineCoursesViewModel
 
         'OnsiteCourses
-        Me.OnsiteCoursesUserControl.MainGrid.DataContext = New OnsiteCoursesViewModel
+        'Me.OnsiteCoursesUserControl.MainGrid.DataContext = New OnsiteCoursesViewModel
+
+        'StudentGrade
+        Me.StudentGradesUserControl.MainGrid.DataContext = New StudentGradesViewModel
 
     End Sub
 End Class
