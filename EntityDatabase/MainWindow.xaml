@@ -7,8 +7,9 @@
     xmlns:onsitecourses="clr-namespace:Modules.OnsiteCourses.Views"
     xmlns:officeassignments="clr-namespace:Modules.OfficeAssignments.Views"
     xmlns:studentgrades="clr-namespace:Modules.StudentGrades.Views"
+    xmlns:persons="clr-namespace:Modules.Persons.Views"
     Title="MainWindow" Height="377" Width="568">
     <Grid>
-        <studentgrades:StudentGradesList x:Name="StudentGradesUserControl"/>
+        <persons:PersonsList x:Name="PersonsUserControl"/>
     </Grid>
 </Window>

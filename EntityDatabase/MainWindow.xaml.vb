@@ -4,6 +4,7 @@ Imports Modules.OnlineCourses.ViewModels
 Imports Modules.OnsiteCourses.ViewModels
 Imports Modules.OfficeAssignments.ViewModels
 Imports Modules.StudentGrades.ViewModels
+Imports Modules.Persons.ViewModels
 Class MainWindow
     Sub New()
 
@@ -28,7 +29,10 @@ Class MainWindow
         'Me.OnsiteCoursesUserControl.MainGrid.DataContext = New OnsiteCoursesViewModel
 
         'StudentGrade
-        Me.StudentGradesUserControl.MainGrid.DataContext = New StudentGradesViewModel
+        'Me.StudentGradesUserControl.MainGrid.DataContext = New StudentGradesViewModel
+
+        'Persons
+        Me.PersonsUserControl.MainGrid.DataContext = New PersonsViewModel
 
     End Sub
 End Class

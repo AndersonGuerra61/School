@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="Modules.Persons.Views.PersonsList"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Height="334" Width="561">
+    <Grid Name="MainGrid">
+        <DataGrid HorizontalAlignment="Left" Margin="25,30,0,0" VerticalAlignment="Top"
+                  ItemsSource="{Binding Persons}" Height="284" Width="512"
+                  AutoGenerateColumns="false" RowDetailsVisibilityMode="VisibleWhenSelected">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="PersonIdColumn" Binding="{Binding Path=PersonID}" Header="ID" Width="100"/>
+                <DataGridTextColumn x:Name="LastNameColumn" Binding="{Binding Path=LastName}" Header="LastName" Width="100"/>
+                <DataGridTextColumn x:Name="FirstNameColumn" Binding="{Binding Path=FirstName}" Header="FirstName" Width="100"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>
