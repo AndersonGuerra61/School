@@ -14,22 +14,22 @@ Class MainWindow
         ' Add any initialization after the InitializeComponent() call.
 
         'Departments
-        'Me.DepartamentsUserControl.MainGrid.DataContext = New DepartmentsViewModel
+        Me.DepartamentsUserControl.MainGrid.DataContext = New DepartmentsViewModel
 
         'Courses
-        'Me.CoursesUserControl.MainGrid.DataContext = New CoursesViewModel
+        Me.CoursesUserControl.MainGrid.DataContext = New CoursesViewModel
 
         'OfficeAssignments
-        'Me.OfficeAssignmentsUserControl.MainGrid.DataContext = New OfficeAssignmentsViewModel
+        Me.OfficeAssignmentsUserControl.MainGrid.DataContext = New OfficeAssignmentsViewModel
 
         'OnlineCourses
-        'Me.OnlineCoursesUserControl.MainGrid.DataContext = New OnlineCoursesViewModel
+        Me.OnlineCoursesUserControl.MainGrid.DataContext = New OnlineCoursesViewModel
 
         'OnsiteCourses
-        'Me.OnsiteCoursesUserControl.MainGrid.DataContext = New OnsiteCoursesViewModel
+        Me.OnsiteCoursesUserControl.MainGrid.DataContext = New OnsiteCoursesViewModel
 
         'StudentGrade
-        'Me.StudentGradesUserControl.MainGrid.DataContext = New StudentGradesViewModel
+        Me.StudentGradesUserControl.MainGrid.DataContext = New StudentGradesViewModel
 
         'Persons
         Me.PersonsUserControl.MainGrid.DataContext = New PersonsViewModel

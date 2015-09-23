@@ -9,9 +9,9 @@
                   ItemsSource="{Binding Persons}" Height="284" Width="512"
                   AutoGenerateColumns="false" RowDetailsVisibilityMode="VisibleWhenSelected">
             <DataGrid.Columns>
-                <DataGridTextColumn x:Name="PersonIdColumn" Binding="{Binding Path=PersonID}" Header="ID" Width="100"/>
-                <DataGridTextColumn x:Name="LastNameColumn" Binding="{Binding Path=LastName}" Header="LastName" Width="100"/>
-                <DataGridTextColumn x:Name="FirstNameColumn" Binding="{Binding Path=FirstName}" Header="FirstName" Width="100"/>
+                <DataGridTextColumn x:Name="PersonIdColumn" Binding="{Binding Path=PersonID}" Header="ID" Width="Auto"/>
+                <DataGridTextColumn x:Name="LastNameColumn" Binding="{Binding Path=LastName}" Header="LastName" Width="Auto"/>
+                <DataGridTextColumn x:Name="FirstNameColumn" Binding="{Binding Path=FirstName}" Header="FirstName" Width="Auto"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
